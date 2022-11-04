@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listacursos.component.scss']
 })
 export class ListacursosComponent implements OnInit {
+  cursos: Curso[] = []
+  displayedColumns = ['id', 'nomecurso']
 
   constructor() { }
 
