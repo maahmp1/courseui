@@ -4,15 +4,15 @@ import { Curso } from 'src/app/core/model';
 @Component({
   selector: 'app-listacursos',
   templateUrl: './listacursos.component.html',
-  styleUrls: ['./listacursos.component.scss']
+  styleUrls: ['./listacursos.component.scss'],
 })
 export class ListacursosComponent implements OnInit {
-  cursos: Curso[] = []
-  displayedColumns = ['id', 'nomecurso']
+  cursos: Curso[] = [];
+  displayedColumns = ['nome', 'categoria'];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.cursos = [];
   }
 
+  ngOnInit(): void {}
 }

@@ -7,11 +7,11 @@ import { Aluno } from 'src/app/core/model';
   styleUrls: ['./listaalunos.component.scss'],
 })
 export class ListaalunosComponent implements OnInit {
-  alunos: Aluno[] = [
+  alunos: Aluno[] = [];
 
-  ];
-
-  constructor() {}
-  displayedColumns = ['idaluno', 'nomealuno']
+  constructor() {
+    this.alunos = [];
+  }
+  displayedColumns = ['id', 'nome']
   ngOnInit(): void {}
 }
