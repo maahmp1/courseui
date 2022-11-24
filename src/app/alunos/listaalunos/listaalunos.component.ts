@@ -7,10 +7,20 @@ import { Aluno } from 'src/app/core/model';
   styleUrls: ['./listaalunos.component.scss'],
 })
 export class ListaalunosComponent implements OnInit {
-  alunos: Aluno[] = [];
+  alunos: Aluno[] = [
+    {id:1, nome:'ana'},
+    {id:2, nome:'pedro'},
+    {id:3, nome:'cola'},
+    {id:4, nome:'vitao'},
+    {id:5, nome:'barbara'},
+    {id:6, nome:'carol'},
+    {id:7, nome:'ana laura'},
+
+
+  ];
 
   constructor() {
-    this.alunos = [];
+
   }
   displayedColumns = ['id', 'nome']
   ngOnInit(): void {}

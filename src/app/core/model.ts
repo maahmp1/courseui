@@ -1,10 +1,9 @@
 export interface Curso{
-  id:string;
   nome: string;
   categoria:string;
 }
 
 export interface Aluno{
-  id:string;
+  id:number;
   nome: string;
 }
